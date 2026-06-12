@@ -1,0 +1,23 @@
+import matplotlib.pyplot as plt
+n=int(input("Enter the number of stocks: "))
+l1=[]
+l2=[]
+
+for i in range(n):
+    stock_name=input("Enter the stock name: ")
+    shares=int(input("Enter the number of shares: "))
+    price=float(input("Enter the price per share:"))
+    total=shares*price
+    
+    print("Total value of stock",stock_name,"is",total)
+    l1.append(stock_name)
+    l2.append(total)
+s=l1
+m=l2
+plt.bar(s,m)
+plt.xlabel("Stocks")
+plt.ylabel("Price")
+plt.show()
+
+
+
